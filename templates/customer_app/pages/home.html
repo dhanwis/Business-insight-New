@@ -3,6 +3,8 @@
 {% block content %}
 
 
+
+
     <!-- main-area -->
     <main class="fix">
         <!-- slider-area -->
@@ -16,7 +18,7 @@
                                 <div class="col-lg-6">
                                     <div class="slider__content">
                                         <!-- <span class="sub-title">We Are Expert In This Field</span> -->
-                                        <h2 class="title">We Take Care Of Your Capital/Finance/Accounts/Registration/Legal Works</h2>
+                                        <h2 class="title">Your One-Stop for Finance, Accounts, and Legal Services</h2>
                                         <p>So you can grow your business to next level</p>
                                         <a class='btn' href="/contact/">Free Consulting</a>
                                     </div>
@@ -31,11 +33,11 @@
                     <div class="swiper-slide slider__single">
                         <div class="slider__bg" data-background="{% static 'customer_app/img/banner/image-2.jpg' %}"></div>
                         <div class="container">
-                            <div class="row1">
+                            <div class="row">
                                 <div class="col-lg-6">
                                     <div class="slider__content">
                                         <!-- <span class="sub-title">We Are Expert In This Field</span> -->
-                                        <h2  class="title">We Take Care Of Your Capital/Finance/Accounts/Registration/Legal Works</h2>
+                                        <h2 class="title">Your One-Stop for Finance, Accounts, and Legal Services</h2>
                                         <p>So you can grow your business to next level</p>
                                         <a class='btn' href="/contact/">Free Consulting</a>
                                     </div>
@@ -172,112 +174,91 @@
                     </div>
                 </div>
                 <div class="row justify-content-center gutter-24">
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in">
                         <div class="services__item-three">
                             <div class="services__item-top">
-                                <div class="services__icon-three">
+                                <!-- <div class="services__icon-three">
                                     <i class="flaticon-profit"></i>
+                                </div> -->
+                                <div class="services__icon-three">
+                                    <i class="flaticon-financial-profit"></i>
                                 </div>
                                 <div class="services__item-top-title" >
-                                    <h2 class="title"><a href="{% url 'services_details' %}">Nidhi Company Registration</a></h2>
+                                    <h2 class="title"><a href='/services/'>Financial Strategy and Planning</a></h2>
                                 </div>
                             </div>
                             <div class="services__content-three">
-                                <p>Are you looking to simplify your Nidhi Company registration process? Then you are at the right place. Corpbiz offers end to end support from application filling to compliance for in India</p>
-                                <!-- <a class='btn btn-two' href="{% url 'services_details' %}"  style="width: 40%;">Read More</a> -->
+                                <p>We work closely with your team to develop a comprehensive financial strategy aligned with
+                                    your business objectives, ensuring that you have a clear roadmap for growth.</p>
+                                <!-- <a class='btn btn-two' href='/services/'>Read More</a> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in">
                         <div class="services__item-three">
                             <div class="services__item-top">
                                 <div class="services__icon-three">
                                     <i class="flaticon-target"></i>
                                 </div>
                                 <div class="services__top-title">
-                                    <h2 class="title"><a href="{% url 'services_details' %}">Trademark Hearing</a></h2>
+                                    <h2 class="title"><a href='/services/'>CFO-as-a-Service</a></h2>
                                 </div>
                             </div>
                             <div class="services__content-three" >
-                                <p style="padding-bottom: 21px;">
-                                    The trademark hearing is a complicated legal procedure that requires a professional approach. If you want to surpass..
-
-
-                                </p>
-                                <!-- <a class='btn btn-two' href="{% url 'services_details' %}" style="width: 40%;">Read More</a> -->
+                                <p style="padding-bottom: 21px;">Our experienced CFOs provide ongoing financial management, insights, and guidance,
+                                    acting as an integral part of your leadership team without the overhead of a full-time hire.</p>
+                                <!-- <a class='btn btn-two' href='/services/'>Read More</a> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in">
                         <div class="services__item-three">
                             <div class="services__item-top">
-                                <div class="services__icon-three">
+                                <!-- <div class="services__icon-three">
                                     <i class="flaticon-financial-profit"></i>
+                                </div> -->
+                                <div class="services__icon-three">
+                                    <i class="flaticon-budget"></i>
                                 </div>
                                 <div class="services__top-title">
-                                    <h2 class="title"><a href="{% url 'services_details' %}">Income Tax Return Filing</a></h2>
+                                    <h2 class="title"><a href='/services/'>Financial Reporting and Analysis</a></h2>
                                 </div>
                             </div>
                             <div class="services__content-three">
-                                <p>Take the help of our expert services to ensure quick, easy, and completely risk-free filing of income tax return.
-                                    Corpbiz's professionals will ensure that your tax returns are filed on time..</p>
-                                <!-- <a class='btn btn-two' href="{% url 'services_details' %}" style="width: 40%;">Read More</a> -->
+                                <p>We deliver timely, accurate, and actionable financial reports and analysis, empowering you
+                                    to make informed decisions based on a deep understanding of your business's financial
+                                    health.</p>
+                                <!-- <a class='btn btn-two' href='/services/'>Read More</a> -->
                             </div>
                         </div>
-                        
-                      
                     </div>
-                    <div class="d-flex justify-content-center">
-                        <a class='btn btn-two' href="/services/" >Read More</a>
-                    </div>
-                    <!-- <div class="col-lg-4 col-md-6">
+
+
+                    <div class="col-lg-3 col-md-6" data-aos="zoom-in">
                         <div class="services__item-three">
                             <div class="services__item-top">
+                                <!-- <div class="services__icon-three">
+                                    <i class="flaticon-financial-profit"></i>
+                                </div> -->
                                 <div class="services__icon-three">
-                                    <i class="flaticon-piggy-bank"></i>
+                                    <i class="flaticon-investment"></i>
                                 </div>
                                 <div class="services__top-title">
-                                    <h2 class="title"><a href="{% url 'services_details' %}">Tax <br> Advisory</a></h2>
+                                    <h2 class="title"><a href='/services/'>Compliance and Risk Management</a></h2>
                                 </div>
                             </div>
                             <div class="services__content-three">
-                                <p>Mauris utenim sitamet lacus ornar eary ullamcperson Praesent plaacera treat neque eu purus rhoncu</p>
-                                <a class='btn btn-two' href="{% url 'services_details' %}">Read More</a>
+                                <p>Our experts ensure that your business stays compliant with all relevant financial regulations
+                                    and proactively identify and mitigate potential risks, giving you peace of mind as you grow.</p>
+                                <!-- <a class='btn btn-two' href='/services/'>Read More</a> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="services__item-three">
-                            <div class="services__item-top">
-                                <div class="services__icon-three">
-                                    <i class="flaticon-investment-1"></i>
-                                </div>
-                                <div class="services__top-title">
-                                    <h2 class="title"><a href="{% url 'services_details' %}">Money <br> Growth Method</a></h2>
-                                </div>
-                            </div>
-                            <div class="services__content-three">
-                                <p>Mauris utenim sitamet lacus ornar eary ullamcperson Praesent plaacera treat neque eu purus rhoncu</p>
-                                <a class='btn btn-two' href="{% url 'services_details' %}">Read More</a>
-                            </div>
-                        </div>
+
+
+                    <div class="d-flex justify-content-center mt-5">
+                        <a class="btn btn-two" href="/services/">Read More</a>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="services__item-three">
-                            <div class="services__item-top">
-                                <div class="services__icon-three">
-                                    <i class="flaticon-startup"></i>
-                                </div>
-                                <div class="services__top-title">
-                                    <h2 class="title"><a href="{% url 'services_details' %}">Bootstrap <br> Planning</a></h2>
-                                </div>
-                            </div>
-                            <div class="services__content-three">
-                                <p>Mauris utenim sitamet lacus ornar eary ullamcperson Praesent plaacera treat neque eu purus rhoncu</p>
-                                <a class='btn btn-two' href="{% url 'services_details' %}">Read More</a>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </section>

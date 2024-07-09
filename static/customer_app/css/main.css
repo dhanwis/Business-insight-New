@@ -11720,7 +11720,12 @@ blockquote p {
   padding-bottom: 30px;
   margin-bottom: 35px;
   gap: 25px;
-}
+}   
+
+
+
+
+
 @media (max-width: 767.98px) {
   .comments-box {
     flex-wrap: wrap;

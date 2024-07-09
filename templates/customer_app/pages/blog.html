@@ -1,0 +1,185 @@
+{% extends "customer_app/base.html" %}
+{% load static %}
+{% block content %}
+
+    <!-- main-area -->
+    <main class="fix1">
+        <!-- breadcrumb-area -->
+        <section class="breadcrumb__area breadcrumb__bg" data-background="{% static 'customer_app/img/banner/banner-2.jpg' %}">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="breadcrumb__content">
+                            <h2 class="title">Blog</h2>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      
+        </section>
+        <!-- breadcrumb-area-end -->
+
+
+
+         <!-- featured -->
+         <!--<section class="team-area pt-120 pb-90">
+            <div class="container">
+                <div class="row align-items-center">
+                    <h1 class="text-center" style="color: #0d2e49;">Our Core Team</h1>
+                </div>
+                <div class="team-item-wrap mt-5">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="/static/img/team/team_img02.jpg" alt="">
+                                    <div class="team-social">
+                                        <div class="social-toggle-icon">
+                                            <i class="fas fa-share-alt"></i>
+                                        </div>
+                                        <ul class="list-wrap">
+                                            <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="title"><a href='team-details.html'>Stan Rose Angles</a></h4>
+                                    <span>Co-founder & Managing Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="/static/img/team/team_img01.jpg" alt="">
+                                    <div class="team-social">
+                                        <div class="social-toggle-icon">
+                                            <i class="fas fa-share-alt"></i>
+                                        </div>
+                                        <ul class="list-wrap">
+                                            <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="title"><a href='team-details.html'>John Pena</a></h4>
+                                    <span>Finance Advisor</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="/static/img/team/team_img03.jpg" alt="">
+                                    <div class="team-social">
+                                        <div class="social-toggle-icon">
+                                            <i class="fas fa-share-alt"></i>
+                                        </div>
+                                        <ul class="list-wrap">
+                                            <li><a href="javascript:void(0)"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="title"><a href='team-details.html'>Floyd Miles</a></h4>
+                                    <span>Finance Advisor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!-- featured-end -->
+        <div class="container pt-5 ">
+            <p style="font-size: 20px; text-align: justify;">Welcome to the Business Insight Blog, where we share valuable insights, tips, and strategies to help
+                businesses navigate the complex world of finance and achieve their growth objectives. Our team of
+                experienced CFOs, financial analysts, and industry experts deliver fresh, relevant content on a regular
+                basis, covering a wide range of topics that matter most to startups, MSMEs, and enterprises.
+            </p>
+        </div>
+
+    <!-- Value --> 
+    <section class="services__area-three services__bg-three " data-background="{% static 'customer_app/img/bg/services_bg.jpg' %}">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-16">
+                    <div class="section-title white-title text-center mb-50 tg-heading-subheading animation-style3">
+                        <!-- <span class="sub-title text-light">WHAT WE OFFER</span> -->
+                        <h6 class="title tg-element-title justify-content-center" style="color: #0d2e49;">Categories</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center gutter-24">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="services__item-three">
+                        <h2 class="text-center">Financial Strategy</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="services__item-three">
+                        <h2 class="text-center" >CFO Insights</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="services__item-three">
+                        <h2 class="text-center" >Startup Finance
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="services__item-three">
+                        <h2 class="text-center" >MSME Growth
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="services__item-three">
+                        <h2 class="text-center" >Enterprise Solutions
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="services__item-three">
+                        <h2 class="text-center" >Industry News
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                    <div class="services__item-three">
+                        <h2 class="text-center" >Case Studies
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Value end-->
+    <!-- main-area-end --> 
+    <!-- JS here -->
+    <script src="/static/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/jquery.magnific-popup.min.js"></script>
+    <script src="/static/js/jquery.odometer.min.js"></script>
+    <script src="/static/js/jquery.appear.js"></script>
+    <script src="/static/js/gsap.js"></script>
+    <script src="/static/js/ScrollTrigger.js"></script>
+    <script src="/static/js/SplitText.js"></script>
+    <script src="/static/js/gsap-animation.js"></script>
+    <script src="/static/js/jquery.parallaxScroll.min.js"></script>
+    <script src="/static/js/swiper-bundle.js"></script>
+    <script src="/static/js/ajax-form.js"></script>
+    <script src="/static/js/wow.min.js"></script>
+    <script src="/static/js/aos.js"></script>
+    <script src="/static/js/main.js"></script>
+
+{% endblock %}

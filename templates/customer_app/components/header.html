@@ -20,6 +20,7 @@
                                             
                                             <li class="menu-item-has-children"><a href="{% url 'about' %}">About Us</a></li>
                                             <li class="menu-item-has-children"><a href="{% url 'services' %}">Services</a></li>
+                                            <li><a href="{% url 'blog' %}">blog</a></li>
                                             <li><a href="{% url 'contact' %}">contacts</a></li>
                                         </ul>
                                     </div>
@@ -78,7 +79,7 @@
                                 <nav class="tgmobile__menu-box">
                                     <div class="close-btn"><i class="fas fa-times"></i></div>
                                     <div class="nav-logo">
-                                        <a href=''><img src="{{% static 'customer_app/mine/logooo.png' %}' %}" alt="Logo"></a>
+                                        <a href=''><img src="{% static 'customer_app/mine/logooo.png' %}" alt="Logo"></a>
                                     </div>
                                     <div class="tgmobile__search">
                                         <form action="#">
@@ -155,7 +156,7 @@
                     <button><i class="far fa-window-close"></i></button>
                 </div>
                 <div class="offCanvas__logo mb-30">
-                    <a href=''><img src="{{% static 'customer_app/mine/logooo.png' %}' %}" alt="Logo"></a>
+                    <a href=''><img src="{% static 'customer_app/mine/logooo.png' %}" alt="Logo"></a>
                 </div>
                 <div class="offCanvas__side-info mb-30">
                     <div class="contact-list mb-30">
@@ -225,15 +226,19 @@
                                             </li>
                                             
                                             <li class="{% if current_page == 'about' %}active menu-item-has-children{% endif %}">
-                                                <a href="{% url 'about' %}">about</a>
+                                                <a href="{% url 'about' %}">About Us</a>
                                             </li>
 
                                             <li class="{% if current_page == 'services' %}active menu-item-has-children{% endif %}">
-                                                <a href="{% url 'services' %}">Services</a>
+                                                <a href="{% url 'services' %}">services</a>
+                                            </li>
+
+                                            <li class="{% if current_page == 'blog' %}active menu-item-has-children{% endif %}">
+                                                <a href="{% url 'blog' %}">blog</a>
                                             </li>
                                             
                                             <li class="{% if current_page == 'contact' %}active menu-item-has-children{% endif %}">
-                                                <a href="{% url 'contact' %}">contact</a>
+                                                <a href="{% url 'contact' %}">contacts</a>
                                             </li>
                                         </ul>
                                     </div>

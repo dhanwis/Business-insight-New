@@ -31,55 +31,263 @@
     <!-- breadcrumb-area-end -->
     <!-- services-area -->
     <!-- Carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            {% for chunk in services_chunks %}
-                <button type="button" data-bs-target="#demo" data-bs-slide-to="{{ forloop.counter0 }}" class="{% if forloop.first %}active{% endif %}" style="background-color: rgb(18, 115, 176); width:53px; height: 4px;"></button>
-            {% endfor %}
-        </div>
-    
-        <!-- The slideshow/carousel -->
-        <section class="services_area-five services_bg-five" data-background="{% static 'customer_app/img/bg/inner_services_bg02.jpg' %}">
-            <div class="carousel-inner">
-                {% for chunk in services_chunks %}
-                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
-                        <div class="row justify-content-center">
-                            <div class="col-xl-6 col-lg-8">
-                                <div class="section-title text-center mb-40">
-                                    <div class="section-title mb-25 tg-heading-subheading animation-style3"></div>
-                                    <span class="sub-title">WHAT WE OFFER</span>
-                                    <h2 class="title">We Offer An Effective Wide Area Business solutions</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="services-item-wrap">
-                            <div class="row justify-content-center">
-                                {% for service in chunk %}
-                                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                                    <div class="services-item shine-animate-item">
-                                        <div class="services-thumb">
-                                            <a class='shine-animate' href="#">
-                                                <img src="{{ service.image.url }}" alt="">
-                                            </a>
-                                        </div>
-                                        <div class="services-content">
-                                            <div class="icon">
-                                                <i class="flaticon-profit"></i>
-                                            </div>
-                                            <h4 class="title"><a href="#">{{ service.title }}</a></h4>
-                                            <p>{{ service.description }}<br></p>
-                                            <!-- <a class='btn' href="#">Read More</a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                {% endfor %}
-                            </div>
+    <section class="about__area-three about__bg-two" data-background="{% static 'customer_app/img/bg/h3_about_bg.jpg' %}">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <div class="about__img-wrap-three">
+                        <img src="{% static 'customer_app/img/banner/picc-4.jpg' %}" alt="" height="400" width="400">
+                        <!-- <img src="/static/img/images/choose_img01.jpg" width="200" height="150" alt="" data-parallax='{"x" : 50 }'> -->
+                        <div class="shape">
+                            <!-- <img src="/static/img/images/h3_about_img_shape.png" alt="" class="alltuchtopdown"> -->
                         </div>
                     </div>
-                {% endfor %}
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__content-three">
+                        <div class="section-title mb-25 tg-heading-subheading">
+                            <p class="text-dark" style="font-size: 20px; text-align: justify;">At Business Insight, we offer a comprehensive suite of financial services tailored to meet the unique
+                                needs of startups, MSMEs, and enterprises at every stage of their growth journey. Our experienced
+                                team of CFOs, financial analysts, and compliance experts work closely with you to develop and
+                                implement strategies that drive sustainable growth and long-term success.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>    
+    </section>                 
+    <!-- services cfo end -->
+
+    <section>
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <div class="about__content-three">
+                        <div class="section-title mb-25 tg-heading-subheading">
+                            <h1 class="text-center" style="color:#0d2e49;">CFO-as-a-Service</h1>
+                            <p class="text-dark" style="font-size: 22px; text-align: justify;">Our CFO-as-a-Service offering provides you with the expertise and guidance of a seasoned CFO
+                                without the overhead of a full-time hire. We work as an extension of your team, providing strategic
+                                financial leadership and support across a range of areas, including:
+                            </p>
+                            <ul class="mt-4 text-dark" style="font-size: 20px;">
+                                <div class="mt3">
+                                    <li>Financial strategy and planning</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li> Cash flow management and forecastin</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Budgeting and expense control</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Financial reporting and analysis</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Fundraising and investor relations Mergers and acquisitions support Financial Strategy and Plannin</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                        <img src="{% static 'customer_app/img/images/inner_about01.jpg' %}" alt="" height="340" width="400">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5">
+        <div class="container mt-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <img src="{% static 'customer_app/img/images/inner_about01.jpg' %}" alt="" height="400" width="500">
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__content-three">
+                        <div class="section-title mb-25 tg-heading-subheading">
+                            <h1 class="text-center" style="color:#0d2e49;">Financial Strategy and Planning</h1>
+                            <p class="text-dark" style="font-size: 22px; text-align: justify;">We help you develop a robust financial strategy that aligns with your business objectives and sets
+                                you on the path to long-term success. Our services include:
+                            </p>
+                            <ul class="mt-4 text-dark" style="font-size: 20px;">
+                                <div class="mt-3">
+                                    <li>Comprehensive financial assessments</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Customized financial roadmaps</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Scenario planning and sensitivity analysis</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Capital structure optimization</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Growth strategy development</li>
+                               </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5">
+        <div class="container mt-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <div class="about__content-three">
+                        <div class="section-title mb-25 tg-heading-subheading">
+                            <h1 class="text-center" style="color:#0d2e49;">Accounting and Bookkeeping</h1>
+                            <p class="text-dark" style=" font-size: 22px; text-align: justify;">Accurate and timely financial records are essential for making informed business decisions. Our
+                                accounting and bookkeeping services ensure that your financial data is always up-to-date and
+                                compliant with regulatory requirements. We offer:
+                            </p>
+                            <ul class="mt-4 text-dark" style="font-size: 20px;">
+                                <div class="mt3">
+                                    <li>Daily, weekly, and monthly bookkeeping</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Accounts payable and receivable management</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Bank and credit card reconciliations</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Payroll processing and management</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Tax preparation and filing</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                        <img src="{% static 'customer_app/img/images/inner_about01.jpg' %}" alt="" height="400" width="500">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5">
+        <div class="container mt-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <img src="{% static 'customer_app/img/images/inner_about01.jpg' %}" alt="" height="400" width="500">
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__content-three">
+                        <div class="section-title mb-25 tg-heading-subheading">
+                            <h1 class="text-center" style="color:#0d2e49;">Financial Reporting and Analysis</h1>
+                            <p class="text-dark" style="font-size: 22px; text-align: justify; letter-spacing: 0.5px;">Our financial reporting and analysis services provide you with the insights you need to make datadriven decisions and monitor your business's financial health. We deliver:
+                            </p>
+                            <ul class="mt-4 text-dark" style="font-size: 20px;">
+                                <div class="mt-3">
+                                    <li>Monthly, quarterly, and annual financial statements</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Key performance indicator (KPI) tracking and reporting</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Budget vs. actual variance analysis</li>
+                                </div>
+                               <div class="mt-3">
+                                    <li>Cash flow and working capital analysis</li>
+                               </div>
+                                <div class="mt-3">
+                                    <li>Customized management reports</li>
+                                </div>
+                            </ul>      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pt-5">
+        <div class="container mt-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <div class="about__content-three">
+                        <div class="section-title mb-25 tg-heading-subheading">
+                            <h1 class="text-center" style="color:#0d2e49;">Compliance and Risk Management</h1>
+                            <p class="text-dark" style="font-size: 22px; text-align: justify;">Navigating the complex world of financial regulations and compliance requirements can be
+                                challenging. Our team helps you stay compliant and mitigate risks, so you can focus on growing your
+                                business. We provide:
+                            </p>
+                            <ul class="mt-4 text-dark" style="font-size: 20px;">
+                                <div class="mt-3">
+                                    <li>Regulatory compliance assessments</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Internal control design and implementation</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Risk identification and mitigation strategies</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Audit preparation and support</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Policy and procedure development</li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-8">
+                        <img src="{% static 'customer_app/img/images/inner_about01.jpg' %}" alt="" height="400" width="500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pt-5">
+        <div class="container mt-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-4 col-md-8">
+                    <img src="{% static 'customer_app/img/images/inner_about01.jpg' %}" alt="" height="400" width="500">
+                </div>
+                <div class="col-lg-6">
+                    <div class="about__content-three">
+                        <div class="section-title mb-25 tg-heading-subheading">
+                            <h1 class="text-center" style="color:#0d2e49;">Why Choose Business Insight?</h1>
+                            <ul class="mt-4 text-dark" style="font-size: 20px;">
+                                <div class="mt-3">
+                                    <li>Tailored solutions that fit your unique business needs
+                                    </li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Experienced team of CFOs, financial analysts, and compliance experts</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Proven track record of driving growth and success for our clients</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Collaborative, transparent, and responsive approach</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Innovative technology and tools to streamline financial processes</li>
+                                </div>
+                                <div class="mt-3">
+                                    <li>Flexible engagement models that scale with your business
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container pt-4">
+        <p>Ready to take your business to the next level? <a href="/contact/">Contact us</a> today to schedule a consultation and learn
+            how our financial services can help you achieve your goals.
+        </p>
+    </div>
+
+
     
         <!-- Left and right controls/icons -->
         <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
