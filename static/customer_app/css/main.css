@@ -11833,6 +11833,7 @@ blockquote p {
   -ms-border-radius: 6px;
   border-radius: 6px;
 }
+
 .comment-form .form-grp textarea::placeholder, .comment-form .form-grp input::placeholder {
   font-weight: 400;
   font-size: 15px;
