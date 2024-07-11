@@ -13,8 +13,8 @@
                             <h2 class="title1">About Us</h2>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">About</li>
+                                    <li class="breadcrumb-item "><a href="{% url 'home' %}">Home</a></li>
+                                    <li class="breadcrumb-item active text-white" aria-current="page">About</li>
                                 </ol>
                             </nav>
                         </div>
@@ -81,7 +81,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-lg-16">
                                         <div class="section-title white-title text-center mb-50 tg-heading-subheading animation-style3">
-                                            <span class="sub-title1"> Reasons to Select Us:</span>
+                                            <span class="sub-title1">Our Values:</span>
                                            
                                         </div>
                                     </div>
@@ -89,62 +89,49 @@
                                 <div class="row justify-content-center gutter-24">
                                     <div class="col-lg-4 col-md-6" data-aos="zoom-in">
                                         <div class="services__item-three">
-                                            <div class="services__item-top">
-                                                <div class="services__icon-three">
-                                                    <i class="flaticon-profit"></i>
-                                                </div>
-                                                <div class="services__item-top-title" >
-                                                    <h2 class="title"><a href="{% url 'services_details' %}">Tailored Solutions</a></h2>
-                                                </div>
-                                            </div>
-                                            <div class="services__content-three">
-                                                <p> We provide customized solutions that are suited to the individual demands of each client since we recognize that every organization is different</p>
-                                                <!-- <a class='btn btn-two' href="{% url 'services_details' %}"  style="width: 40%;">Read More</a> -->
+                                            <h2 class="text-center" style="color: #0d2e49;">Integrity</h2>
+                                            <div class="services__content-three mt-4">
+                                                <p>We maintain the highest ethical standards in all our interactions, always putting our clients'
+                                                    interests first.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6" data-aos="zoom-in">
                                         <div class="services__item-three">
-                                            <div class="services__item-top">
-                                                <div class="services__icon-three">
-                                                    <i class="flaticon-target"></i>
-                                                </div>
-                                                <div class="services__top-title">
-                                                    <h2 class="title"><a href="{% url 'services_details' %}"> Proactive Approach</a></h2>
-                                                </div>
-                                            </div>
-                                            <div class="services__content-three" >
-                                                <p style="padding-bottom: 21px;">
-                                                    We help firms keep ahead of obstacles and take advantage of opportunities by adopting a proactive approach to financial management and tax planning
-                
-                
-                                                </p>
-                                                <!-- <a class='btn btn-two' href="{% url 'services_details' %}" style="width: 40%;">Read More</a> -->
+                                            <h2 class="text-center" style="color: #0d2e49;">Excellence</h2>
+                                            <div class="services__content-three mt-4" >
+                                                <p style="padding-bottom: 21px;">We constantly strive to deliver exceptional quality in every aspect of our work, going above and
+                                                    beyond to meet our clients' needs.</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6" data-aos="zoom-in">
                                         <div class="services__item-three">
-                                            <div class="services__item-top">
-                                                <div class="services__icon-three">
-                                                    <i class="flaticon-financial-profit"></i>
-                                                </div>
-                                                <div class="services__top-title">
-                                                    <h2 class="title"><a href="{% url 'services_details' %}">Client Focus</a></h2>
-                                                </div>
-                                            </div>
-                                            <div class="services__content-three">
-                                                <p>At the center of all we do is our clientele. Our dedication lies in creating enduring connections and providing outstanding support.</p>
-                                                <!-- <a class='btn btn-two' href="{% url 'services_details' %}" style="width: 40%;">Read More</a> -->
+                                            <h2 class="text-center" style="color: #0d2e49;">Collaboration</h2>
+                                            <div class="services__content-three mt-4">
+                                                <p>We believe in the power of partnership, working closely with our clients and each other to
+                                                    achieve shared goals.</p>
                                             </div>
                                         </div>
-                                        
-                                      
                                     </div>
-                                    <!-- <div class="d-flex justify-content-center">
-                                        <a class='btn btn-two' href="/services/" >Read More</a>
-                                    </div> -->
-                                    
+                                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                                        <div class="services__item-three">
+                                            <h2 class="text-center" style="color: #0d2e49;">Innovation</h2>
+                                            <div class="services__content-three mt-4">
+                                                <p>We embrace creativity and continuously seek out new ways to deliver value and solve complex
+                                                    challenges.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6" data-aos="zoom-in">
+                                        <div class="services__item-three">
+                                            <h2 class="text-center" style="color: #0d2e49;">Growth</h2>
+                                            <div class="services__content-three mt-4">
+                                                <p>We're committed to the growth and success of our clients, our team, and our company, always
+                                                    learning and improving.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             
                         </section>
@@ -214,7 +201,7 @@
         </section>
         <!-- about-area-end -->
         <!-- brand-area -->
-        <div class="brand__area-four">
+        {% comment %} <div class="brand__area-four">
             <div class="container">
                 <div class="swiper-container brand-active">
                     <div class="swiper-wrapper">
@@ -276,7 +263,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> {% endcomment %}
         <!-- brand-area -->
         <!-- choose-area -->
         <section class="choose__area-four">
