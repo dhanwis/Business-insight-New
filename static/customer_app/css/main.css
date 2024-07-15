@@ -162,6 +162,8 @@ h4 a,
 h5 a,
 h6 a {
   color: inherit;
+  font-size: 20px;
+  text-align: justify;
 }
 
 h1 {
@@ -5016,13 +5018,14 @@ textarea {
   margin-bottom: 20px;
 }
 .services__icon-three {
-  width: 70px;
-  height: 70px;
+  width: 55px;
+  height: 51px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
+  
   align-items: center;
   justify-content: center;
   -webkit-border-radius: 50%;
@@ -5034,7 +5037,7 @@ textarea {
   border: 1px solid var(--tg-color-gray-2);
   flex: 0 0 auto;
   line-height: 0;
-  font-size: 42px;
+  font-size: 32px;
   color: var(--tg-theme-secondary);
   position: relative;
 }
