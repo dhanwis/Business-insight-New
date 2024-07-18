@@ -25,10 +25,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider__shape">
+                     {% comment %} <div class="slider__shape">
                             <img src="{% static 'customer_app/img/slider/slider_shape01.png' %}" alt="">
                             <img src="{% static 'customer_app/img/banner/design.png' %}" alt="">
-                        </div>
+                        </div>  {% endcomment %}
                     </div>
                     <div class="swiper-slide slider__single">
                         <div class="slider__bg" data-background="{% static 'customer_app/img/banner/image-2.jpg' %}"></div>
@@ -44,10 +44,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider__shape">
+                        {% comment %} <div class="slider__shape">
                             <img src="{% static 'customer_app/img/slider/slider_shape01.png' %}" alt="">
                             <img src="{% static 'customer_app/img/banner/design.png' %}" alt="">
-                        </div>
+                        </div> {% endcomment %}
                     </div>
                 </div>
             </div>
@@ -126,7 +126,8 @@
                                     <p>Years <span>Experience</span> in Consulting</p>
                                 </div>
                                 <div class="about__list-box about__list-box-two">
-                                    <ul class="list-wrap">
+                                    <ul class="list-wrap" style="display: inline-block;
+                                     list-style: none;margin-right: 10px; vertical-align: middle;">
                                         <li><i class="flaticon-arrow-button"></i>Business Growth</li>
                                         <li><i class="flaticon-arrow-button"></i>Analysis & Research</li>
                                         <li><i class="flaticon-arrow-button"></i>100% Secure</li>
