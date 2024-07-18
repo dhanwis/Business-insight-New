@@ -1003,7 +1003,8 @@ textarea {
   font-weight: 10%;
 }
 .breadcrumb__content .breadcrumb-item a {
-  color: #665b81;
+  color:#fbfbfb;
+
 }
 .breadcrumb__content .breadcrumb-item a:hover {
   color: var(--tg-theme-primary);
